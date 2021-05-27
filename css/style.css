@@ -11,6 +11,7 @@ body {
   width: 100%;
   height: 100%;
   background: #e5e5e5;
+  display: flex;
 }
 
 img {
@@ -110,4 +111,120 @@ img {
 .notifications-text {
   margin-bottom: 1rem;
   margin-right: 2rem;
+}
+
+/* ////////// CONTENT /////////// */
+
+.content {
+  background: rgb(16, 19, 41);
+  background: linear-gradient(
+    90deg,
+    rgba(16, 19, 41, 1) 0%,
+    rgba(31, 23, 52, 1) 100%
+  );
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3rem 7rem;
+}
+.search {
+  color: #5d5e6d;
+  display: flex;
+  align-items: center;
+  font-size: 1.2vw;
+}
+
+.search label {
+  margin-right: 1rem;
+}
+.search input {
+  background: none;
+  height: 1.3vw;
+  color: #e5e5e5;
+  width: 50%;
+}
+.search input::placeholder {
+  font-size: 1.1vw;
+}
+
+.featured-playlists {
+  margin-top: 3rem;
+  color: #e5e5e5;
+}
+.featured-cards {
+  padding: 1rem 0;
+  display: flex;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.featured-wrap {
+  display: flex;
+}
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1f1839;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #200f56;
+  border-radius: 10px;
+}
+
+.featured-card {
+  margin-right: 1rem;
+  min-width: 70%;
+}
+
+.featured-capa-box {
+  background: peru;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+#capa1 {
+  background: url('../assets/playlist1.jpg') no-repeat;
+}
+#capa2 {
+  background: url('../assets/playlist2.jpg') no-repeat;
+}
+#capa3 {
+  background: url('../assets/playlist3.jpg') no-repeat;
+}
+#capa4 {
+  background: url('../assets/playlist4.jpg') no-repeat;
+}
+
+#capa1,
+#capa2,
+#capa3,
+#capa4 {
+  background-size: 100%;
+  background-position: center;
+  transition: 0.2s;
+  filter: brightness(50%);
+}
+
+#capa1:hover,
+#capa2:hover,
+#capa3:hover,
+#capa4:hover {
+  background-size: 120%;
+  background-position: center;
+  cursor: pointer;
+  filter: brightness(100%);
+}
+
+.featured-capa img {
+  object-fit: scale-down;
+}
+.featured-title {
+  margin-top: 1rem;
 }
