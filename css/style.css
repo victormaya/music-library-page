@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: #e5e5e5;
+}
+
+img {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.side-bar {
+  background-color: #040517;
+  width: 16.5%;
+  height: 100vh;
+  padding: 6rem 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-profile {
+  display: flex;
+}
+
+.profile {
+  width: 80px;
+  height: 80px;
+  background: url('../assets/profile.jpg');
+  background-size: 80px;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.profile-name {
+  color: #e5e5e5;
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+
+.profile-edit {
+  display: flex;
+  margin-top: 0.2rem;
+}
+
+.profile-edit-text,
+.profile-edit-icon {
+  color: #40404e;
+}
+.profile-edit-text {
+  margin-right: 0.3rem;
+}
+
+.card-overview,
+.card-dashboard {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: inline-block;
+  margin: 0 auto;
+}
+.card-overview {
+  border-top: solid 1px #40404e;
+  border-bottom: solid 1px #40404e;
+  margin-top: 130%;
+}
+
+.overview,
+.news,
+.playlists,
+.discover,
+.dashboard,
+.messages,
+.notifications,
+.account {
+  display: flex;
+  color: #40404e;
+}
+.overview {
+  color: #e5e5e5;
+}
+.overview-icon,
+.news-icon,
+.playlists-icon,
+.discover-icon,
+.dashboard-icon,
+.messages-icon,
+.notifications-icon,
+.account-icon {
+  margin-right: 0.5rem;
+}
+.overview-text,
+.news-text,
+.playlists-text {
+  margin-bottom: 1rem;
+  margin-right: 3rem;
+}
+
+.dashboard-text,
+.messages-text,
+.notifications-text {
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+}
